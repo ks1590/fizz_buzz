@@ -5,7 +5,7 @@ class Integer
     result = ''
     result = 'Fizz' if self.divide?(3)
     result += 'Buzz' if self.divide?(5)
-    result.empty? ? self.to_s : result
+    result.empty? ? self : result
   end
 
   def divide?(n)
