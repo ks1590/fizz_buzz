@@ -2,10 +2,10 @@
 # get_fizz_buzzメソッドでFizzBuzzを判定
 class Integer
   def get_fizz_buzz
-    ret = ''
-    ret = 'Fizz' if self.divide?(3)
-    ret += 'Buzz' if self.divide?(5)
-    ret.empty? ? self.to_s : ret
+    result = ''
+    result = 'Fizz' if self.divide?(3)
+    result += 'Buzz' if self.divide?(5)
+    result.empty? ? self.to_s : result
   end
 
   def divide?(n)
@@ -15,7 +15,7 @@ end
 
 # FizzBuzz
 while true
-  puts "数字を入力してください(０以外)。"
+  puts "0以外の半角数字を入力してください。"
   max = gets.chomp
   if max =~ /\A[0-9]+\z/ 
     if max != "0"
